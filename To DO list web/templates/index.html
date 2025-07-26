@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <!-- index.html -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="todo-card">
+            <h1>📝 My Tasks</h1>
+            <form id="task-form" class="task-form">
+                <input type="text" id="task-input" placeholder="Add a task..." required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list" class="task-list"></ul>
+            <div id="task-added" class="task-added">Task added ✓</div>
+        </div>
+    </div>
+</body>
+</html>
